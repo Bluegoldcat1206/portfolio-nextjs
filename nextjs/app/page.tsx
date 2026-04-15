@@ -1,65 +1,123 @@
 import Image from "next/image";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className={styles.container}>
+        {/* <!-- Main Portfolio --> */}
+        <div className={styles.section}>
+            <div className={styles.headerSection}>
+                <div className={styles.logo}></div>
+                <h2 className={styles.headerTitle}>The<br/>Unhinged<br/>Creative</h2>
+            </div>
+
+            <div className={styles.navDots}>
+                <div className={styles.dot}>About</div>
+                <div className={styles.dot}>Portfolio</div>
+                <div className={styles.dot}>FAQ's</div>
+                <div className={styles.dot}>Reviews</div>
+                <a href="#contact" className={styles.dot}>Contact</a>
+            </div>
+
+            <div className={styles.introBox}>
+                <h3 className={styles.introTitle}>So, you want to make something...</h3>
+                <p className={styles.introText}>I'm Natalie Cole, and I can help you create your dream design.</p>
+                <div className={styles.sourceBox}>
+                    <p className={styles.sourceTitle}>Source Serif Variable ExtraLight</p>
+                    <p className={styles.sourceSubtitle}>Flavor</p>
+                </div>
+            </div>
+
+            <div className={styles.rollingBar}>
+                <p className={styles.rollingTitle}>Rolling bar of my icons</p>
+            </div>
+
+            <div className={styles.skillsGrid}>
+                <div className={styles.skillBox}>Skill 1</div>
+                <div className={styles.skillBox}>Skill 2</div>
+                <div className={styles.skillBox}>Skill 3</div>
+            </div>
+
+            <div className={styles.portfolioBox}>
+                <h3 className={styles.portfolioTitle}>Portfolio</h3>
+                <p className={styles.portfolioText}>This is my work and these are the things I can do</p>
+            </div>
+
+            <div id="portfolio-container">
+
+            </div>
+
+
+            <div className={styles.faqSection}>
+                <h3 className={styles.faqTitle}>FAQ'S</h3>
+                <div className={styles.faqQuestion}>Question (Click to expand for Answer)</div>
+                <div className={styles.faqQuestion}>Question (Click to expand for Answer)</div>
+                <div className={styles.faqQuestion}>Question (Click to expand for Answer)</div>
+                <div className={styles.faqQuestion}>Question (Click to expand for Answer)</div>
+                <div className={styles.faqQuestion}>Question (Click to expand for Answer)</div>
+                
+                <div className={styles.divider}>
+                    <div className={styles.arrowDown}></div>
+                </div>
+
+                <div className={styles.skillsFinalInner}>
+                    <div className={styles.skillsFinalGrid}>
+                        <div className={styles.skillColumn}>
+                            <h4 className={styles.skillColumnTitle}>Skill 1</h4>
+                            <div className={styles.qualItem}>
+                                <div className={styles.qualDot}></div>
+                                <span>Qualifications</span>
+                            </div>
+                            <div className={styles.qualItem}>
+                                <div className={styles.qualDot}></div>
+                                <span>Qualifications</span>
+                            </div>
+                            <div className={styles.qualItem}>
+                                <div className={styles.qualDot}></div>
+                                <span>Qualifications</span>
+                            </div>
+                        </div>
+                        <div className={styles.skillColumn}>
+                            <h4 className={styles.skillColumnTitle}>Skill 2</h4>
+                            <div className={styles.qualItem}>
+                                <div className={styles.qualDot}></div>
+                                <span>Qualifications</span>
+                            </div>
+                            <div className={styles.qualItem}>
+                                <div className={styles.qualDot}></div>
+                                <span>Qualifications</span>
+                            </div>
+                            <div className={styles.qualItem}>
+                                <div className={styles.qualDot}></div>
+                                <span>Qualifications</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.contactMeBtn}>Contact Me</div>
+                </div>
+            </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* <!-- Client Testimonies Section --> */}
+        <div className={styles.section} style={{marginTop: "40px"}}>
+            <h1 className={styles.sectionTitle}>Client Testimonies</h1>
+            <div className={styles.testimonialsGrid}>
+                <div className={styles.testimonialBox}></div>
+                <div className={styles.testimonialBox}></div>
+                <div className={styles.testimonialBox}></div>
+                <div className={styles.testimonialBox}></div>
+            </div>
         </div>
-      </main>
+
+        <div className={styles.contactCard} id="contact">
+            <div className={styles.cupcakeIcon}></div>
+            <h2 className={styles.contactTitle}>Contact Card</h2>
+            <p className={styles.contactSubtitle}>Thank you yada yada yada</p>
+            <input type="text" className={styles.contactInput} placeholder="Email" value="Email"/>
+            <input type="text" className={styles.contactInput} placeholder="Phone Number" value="Phone Number"/>
+            <input type="text" className={styles.contactInput} placeholder="Instagram" value="Instagram"/>
+            <input type="text" className={styles.contactInput} placeholder="LinkedIn" value="LinkedIn"/>
+        </div>
     </div>
   );
 }
