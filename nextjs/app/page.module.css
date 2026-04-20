@@ -1,56 +1,55 @@
 .container {
-    max-width: 1000px; /* or whatever max width you prefer */
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
     width: 100%;
 }
 
-
 .section {
     margin-bottom: 20px;
 }
 
-.section-title {
+.sectionTitle {
     color: #b8d4d4;
     font-size: 28px;
     margin-bottom: 15px;
     font-weight: 300;
 }
 
-.testimonials-grid {
+.testimonialsGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-.testimonial-box {
+.testimonialBox {
     background-color: #b8d4d4;
     border-radius: 20px;
     height: 120px;
 }
 
-.contact-card {
+.contactCard {
     background-color: #f4d19b;
     border-radius: 20px;
     padding: 20px;
     position: relative;
 }
 
-.contact-title {
+.contactTitle {
     color: #d4a373;
     font-size: 32px;
     margin-bottom: 5px;
     font-weight: 300;
 }
 
-.contact-subtitle {
+.contactSubtitle {
     color: #d4a373;
     font-size: 12px;
     margin-bottom: 15px;
 }
 
-.cupcake-icon {
+.cupcakeIcon {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -61,7 +60,7 @@
     border: 4px solid #f4d19b;
 }
 
-.contact-input {
+.contactInput {
     width: 100%;
     padding: 10px 15px;
     margin-bottom: 8px;
@@ -71,27 +70,27 @@
     font-size: 14px;
 }
 
-.input-email {
+.inputEmail {
     background-color: #f4a4b8;
     color: #8b4158;
 }
 
-.input-phone {
+.inputPhone {
     background-color: #a4a4d8;
     color: #74749e;
 }
 
-.input-instagram {
+.inputInstagram {
     background-color: #a4d4d4;
     color: #2f5f5f;
 }
 
-.input-linkedin {
+.inputLinkedin {
     background-color: #dbb6f7;
     color: #3a3a6b;
 }
 
-.header-section {
+.headerSection {
     background-color: #b8d4d4;
     border-radius: 20px;
     padding: 20px;
@@ -100,15 +99,15 @@
     position: relative;
 }
 
-.header-section::before {
+.headerSection::before {
     content: '';
     position: absolute;
-    top: -5px; /* position half outside */
-    left: -5px; /* position half outside */
+    top: -5px;
+    left: -5px;
     width: 70px;
     height: 70px;
     background-color: #2f5f5f;
-    border-radius: 80%; /* makes it a circle */
+    border-radius: 80%;
 }
 
 .logo {
@@ -121,14 +120,14 @@
     border-radius: 75%;
 }
 
-.header-title {
+.headerTitle {
     color: #2f5f5f;
     font-size: 20px;
     font-weight: 300;
     line-height: 1.3;
 }
 
-.nav-dots {
+.navDots {
     display: flex;
     gap: 8px;
     justify-content: center;
@@ -149,11 +148,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 10px; /* reduced from 10px */
+    font-size: 10px;
     color: #784c21;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    padding: 0 4px; /* add some horizontal padding */
+    padding: 0 4px;
     text-align: center;
     text-decoration: none;
 }
@@ -162,45 +161,45 @@
     background-color: #e4c189;
 }
 
-.intro-box {
+.introBox {
     background-color: #f4d19b;
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 15px;
 }
 
-.intro-title {
+.introTitle {
     color: #d4a373;
     font-size: 20px;
     margin-bottom: 8px;
     font-weight: 300;
 }
 
-.intro-text {
+.introText {
     color: #d4a373;
     font-size: 12px;
     margin-bottom: 15px;
 }
 
-.source-box {
+.sourceBox {
     background-color: #e4a966;
     border-radius: 20px;
     padding: 15px;
     text-align: center;
 }
 
-.source-title {
+.sourceTitle {
     color: #4a4a8b;
     font-size: 14px;
     margin-bottom: 8px;
 }
 
-.source-subtitle {
+.sourceSubtitle {
     color: #38387c;
     font-size: 10px;
 }
 
-.rolling-bar {
+.rollingBar {
     background-color: #f4d19b;
     border-radius: 20px;
     padding: 15px;
@@ -208,20 +207,20 @@
     margin-bottom: 15px;
 }
 
-.rolling-title {
+.rollingTitle {
     color: #d4a373;
     font-size: 18px;
     font-weight: 300;
 }
 
-.skills-grid {
+.skillsGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     margin-bottom: 15px;
 }
 
-.skill-box {
+.skillBox {
     background-color: #b8d4d4;
     border-radius: 20px;
     padding: 15px;
@@ -230,26 +229,26 @@
     font-size: 14px;
 }
 
-.portfolio-box {
+.portfolioBox {
     background-color: #f4a4b8;
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 15px;
 }
 
-.portfolio-title {
+.portfolioTitle {
     color: #8b4158;
     font-size: 20px;
     margin-bottom: 5px;
     font-weight: 300;
 }
 
-.portfolio-text {
+.portfolioText {
     color: #a85f78;
     font-size: 11px;
 }
 
-.portfolio-item {
+.portfolioItem {
     background-color: #f4d19b;
     border-radius: 20px;
     padding: 15px;
@@ -258,34 +257,34 @@
     gap: 15px;
 }
 
-.portfolio-item-text {
+.portfolioItemText {
     flex: 1;
     color: #d4a373;
     font-size: 12px;
 }
 
-.portfolio-item-title {
+.portfolioItemTitle {
     font-size: 14px;
     margin-bottom: 5px;
 }
 
-.portfolio-image {
+.portfolioImage {
     width: 140px;
     height: 100px;
     background-color: #e4a966;
     border-radius: 12px;
     flex-shrink: 0;
-    overflow: hidden; /* ensures images don't overflow the rounded corners */
+    overflow: hidden;
 }
 
-.portfolio-image img {
+.portfolioImage img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* makes images fill the container while maintaining aspect ratio */
-    display: block; /* removes any extra spacing */
+    object-fit: cover;
+    display: block;
 }
 
-.portfolio-tags {
+.portfolioTags {
     display: flex;
     gap: 6px;
     justify-content: center;
@@ -303,14 +302,14 @@
     color: #d4a373;
 }
 
-.faq-section {
+.faqSection {
     background-color: #f4a4b8;
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 15px;
 }
 
-.faq-title {
+.faqTitle {
     background-color: #a4a4d8;
     border-radius: 12px;
     padding: 15px;
@@ -320,7 +319,7 @@
     font-weight: 300;
 }
 
-.faq-question {
+.faqQuestion {
     background-color: #c8c8e8;
     border-radius: 12px;
     padding: 12px 15px;
@@ -338,27 +337,27 @@
     justify-content: center;
 }
 
-.skills-final-grid {
+.skillsFinalGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     margin-bottom: 15px;
 }
 
-.skill-column {
+.skillColumn {
     background-color: #5858a8;
     border-radius: 12px;
     padding: 15px;
 }
 
-.skill-column-title {
+.skillColumnTitle {
     color: white;
     font-size: 16px;
     margin-bottom: 12px;
     text-align: center;
 }
 
-.qual-item {
+.qualItem {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -367,7 +366,7 @@
     font-size: 11px;
 }
 
-.qual-dot {
+.qualDot {
     width: 12px;
     height: 12px;
     background-color: #f4a4b8;
@@ -375,7 +374,7 @@
     flex-shrink: 0;
 }
 
-.contact-me-btn {
+.contactMeBtn {
     background-color: #f4d19b;
     border-radius: 12px;
     padding: 10px;
@@ -384,7 +383,7 @@
     font-size: 14px;
 }
 
-.arrow-down {
+.arrowDown {
     width: 0;
     height: 0;
     border-left: 8px solid transparent;
@@ -392,20 +391,21 @@
     border-top: 12px solid #a4a4d8;
 }
 
-.skills-final-inner {
+.skillsFinalInner {
     background-color: transparent;
 }
+
 @media (max-width: 450px) {
-    .portfolio-item {
+    .portfolioItem {
         flex-direction: column;
     }
 
-    .portfolio-image {
+    .portfolioImage {
         width: 100%;
         height: 100px;
     }
 
-    .skills-final-grid {
+    .skillsFinalGrid {
         grid-template-columns: 1fr;
     }
 }

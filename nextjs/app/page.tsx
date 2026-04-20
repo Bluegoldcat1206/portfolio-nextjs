@@ -1,5 +1,49 @@
-import Image from "next/image";
 import styles from "./page.module.css";
+
+const projects = [
+  {
+    id: "1",
+    title: "Coeur d'Alene Poster",
+    summary: "A poster project based on CDA Lake at Sunset.",
+    images: [{ url: "/images/CDAPoster.png", alt: "Logo design" }],
+    tags: ["Research", "Sketching", "Digital Design"]
+  },
+  {
+    id: "2",
+    title: "Art Nouveau Poster",
+    summary: "Poster in the Art Nouveau style, with a woman figure and bike.",
+    images: [{ url: "/images/ArtNouveau.png", alt: "Website mockup" }],
+    tags: ["History", "Digital Paint", "Artistic"]
+  },
+  {
+    id: "3",
+    title: "First Hobby Logo",
+    summary: "The first logo I created for an imaginary coffee shop.",
+    images: [{ url: "/images/CoolBeansLogo.png", alt: "Event poster" }],
+    tags: ["Logo Design", "First Project", "Learning"]
+  },
+  {
+    id: "4",
+    title: "Christmas Chalk Menu Board",
+    summary: "A Menu board design idea for a coffee shop, with Christmas illustrations.",
+    images: [{ url: "/images/MenuBoard.png", alt: "Event poster" }],
+    tags: ["Brainstorming", "Layout Design", "Final Production"]
+  },
+  {
+    id: "5",
+    title: "Graphic Design Quote Poster",
+    summary: "A poster completely made of type and letters.",
+    images: [{ url: "/images/QuotePoster.png", alt: "Event poster" }],
+    tags: ["Typography", "Layout Design", "Rock and Roll"]
+  },
+  {
+    id: "6",
+    title: "Icon Pattern; Pumpkin Spice Life",
+    summary: "A pattern made of icons I created.",
+    images: [{ url: "/images/PSLPattern.png", alt: "Event poster" }],
+    tags: ["Consistency", "Color Theme", "Spacing"]
+  }
+];
 
 export default function Home() {
   return (
@@ -44,9 +88,25 @@ export default function Home() {
             </div>
 
             <div id="portfolio-container">
-
+                {projects.map(project => (
+                    <div key={project.id}>
+                        <div className={styles.portfolioItem}>
+                            <div className={styles.portfolioItemText}>
+                                <p className={styles.portfolioItemTitle}>{project.title}</p>
+                                <p>{project.summary}</p>
+                            </div>
+                            <div className={styles.portfolioImage}>
+                                <img src={project.images[0].url} alt={project.images[0].alt} />
+                            </div>
+                        </div>
+                        <div className={styles.portfolioTags}>
+                            {project.tags.map(tag => (
+                                <span key={tag} className={styles.tag}>{tag}</span>
+                            ))}
+                        </div>
+                    </div>
+                ))}
             </div>
-
 
             <div className={styles.faqSection}>
                 <h3 className={styles.faqTitle}>FAQ'S</h3>
@@ -113,10 +173,10 @@ export default function Home() {
             <div className={styles.cupcakeIcon}></div>
             <h2 className={styles.contactTitle}>Contact Card</h2>
             <p className={styles.contactSubtitle}>Thank you yada yada yada</p>
-            <input type="text" className={styles.contactInput} placeholder="Email" value="Email"/>
-            <input type="text" className={styles.contactInput} placeholder="Phone Number" value="Phone Number"/>
-            <input type="text" className={styles.contactInput} placeholder="Instagram" value="Instagram"/>
-            <input type="text" className={styles.contactInput} placeholder="LinkedIn" value="LinkedIn"/>
+<input type="text" className={`${styles.contactInput} ${styles.inputEmail}`} placeholder="Email" defaultValue="Email"/>
+<input type="text" className={`${styles.contactInput} ${styles.inputPhone}`} placeholder="Phone Number" defaultValue="Phone Number"/>
+<input type="text" className={`${styles.contactInput} ${styles.inputInstagram}`} placeholder="Instagram" defaultValue="Instagram"/>
+<input type="text" className={`${styles.contactInput} ${styles.inputLinkedin}`} placeholder="LinkedIn" defaultValue="LinkedIn"/>
         </div>
     </div>
   );
