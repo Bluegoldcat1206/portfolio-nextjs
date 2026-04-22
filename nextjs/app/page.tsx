@@ -50,18 +50,6 @@ export default function Home() {
     <div className={styles.container}>
         {/* <!-- Main Portfolio --> */}
         <div className={styles.section}>
-            <div className={styles.headerSection}>
-                <div className={styles.logo}></div>
-                <h2 className={styles.headerTitle}>The<br/>Unhinged<br/>Creative</h2>
-            </div>
-
-            <div className={styles.navDots}>
-                <div className={styles.dot}>About</div>
-                <div className={styles.dot}>Portfolio</div>
-                <div className={styles.dot}>FAQ's</div>
-                <div className={styles.dot}>Reviews</div>
-                <a href="#contact" className={styles.dot}>Contact</a>
-            </div>
 
             <div className={styles.introBox}>
                 <h3 className={styles.introTitle}>So, you want to make something...</h3>
