@@ -82,3 +82,9 @@ body {
 .nav-dot:hover {
     background-color: #e4c189;
 }
+
+.layout-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}

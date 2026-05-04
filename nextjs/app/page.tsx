@@ -161,10 +161,10 @@ export default function Home() {
             <div className={styles.cupcakeIcon}></div>
             <h2 className={styles.contactTitle}>Contact Card</h2>
             <p className={styles.contactSubtitle}>Thank you yada yada yada</p>
-<input type="text" className={`${styles.contactInput} ${styles.inputEmail}`} placeholder="Email" defaultValue="Email"/>
-<input type="text" className={`${styles.contactInput} ${styles.inputPhone}`} placeholder="Phone Number" defaultValue="Phone Number"/>
-<input type="text" className={`${styles.contactInput} ${styles.inputInstagram}`} placeholder="Instagram" defaultValue="Instagram"/>
-<input type="text" className={`${styles.contactInput} ${styles.inputLinkedin}`} placeholder="LinkedIn" defaultValue="LinkedIn"/>
+<a href="mailto:NatalieMB1206.com" className={`${styles.contactInput} ${styles.inputEmail}`}>Email</a>
+<a href="tel:+11234567890" className={`${styles.contactInput} ${styles.inputPhone}`}>Phone Number</a>
+<a href="https://www.instagram.com/beyondthelinesnc/" target="_blank" className={`${styles.contactInput} ${styles.inputInstagram}`}>Instagram</a>
+<a href="https://www.linkedin.com/in/beyondthelinesnc/" target="_blank" className={`${styles.contactInput} ${styles.inputLinkedin}`}>LinkedIn</a>
         </div>
     </div>
   );
