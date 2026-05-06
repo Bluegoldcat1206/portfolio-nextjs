@@ -1,6 +1,6 @@
 import projects from "../../data/projects"
 
-export default async function ProjectPage({ params }) {
+export default async function ProjectPage({ params }: any) {
   const { slug } = await params;
   const project = projects.find((project) => project.slug === slug)
   console.log("project:", project)
