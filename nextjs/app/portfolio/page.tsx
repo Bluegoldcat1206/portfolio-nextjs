@@ -18,7 +18,7 @@ export default function Portfolio() {
                   <span key={tag} className={styles.tag}>{tag}</span>
                 ))}
               </div>
-              <Link href={`/projects/${project.slug}`} className={styles.viewBtn}>
+              <Link href={`/portfolio/${project.slug}`} className={styles.viewBtn}>
                 View Project
               </Link>
             </div>

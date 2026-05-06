@@ -2,7 +2,6 @@ import projects from "../../data/projects"
 
 export default async function ProjectPage({ params }) {
   const { slug } = await params;
-  console.log("slug:", slug)
   const project = projects.find((project) => project.slug === slug)
 
   if (!project) {
