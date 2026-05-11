@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { GoogleAnalytics } from '@next/third-parties/google';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = {  
   title: "The Unhinged Creative",
   description: "Natalie Cole's design portfolio",
+  verification: {
+    google: "vxk2Nq4Riau-iLBa-eAZ4JIAe9T6qL55uJ7ZNIRt8Yw",
+  }
 };
 
 export default function RootLayout({
